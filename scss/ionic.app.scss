@@ -21,3 +21,10 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+#click-button {
+    background-color: $calm;
+}
+
+#foo-second {
+    color: $calm;
+}

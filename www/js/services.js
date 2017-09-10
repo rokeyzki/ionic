@@ -47,4 +47,15 @@ angular.module('starter.services', [])
       return null;
     }
   };
+})
+
+.service('ajaxGet', function($q){
+  var vm = this;
+
+  var deferred = $q.defer();
+  var promise = deferred.promise;
+
+  vm.get = function(val) {
+    return val;
+  }
 });

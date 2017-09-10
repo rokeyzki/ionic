@@ -1,0 +1,14 @@
+{
+    "extends": "angular",
+    "plugins": [
+        "angular"
+    ],
+    "rules": {
+        "angular/controller-name": [2, "/[A-Z].*Ctrl$/"],
+        "angular/log": [1],
+        "angular/no-service-method": [0]
+    },
+    "settings": {
+        "angular": 1
+    }
+}
