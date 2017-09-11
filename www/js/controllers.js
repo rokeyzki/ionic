@@ -5,9 +5,18 @@ angular.module('starter.controllers', [])
   vm.scope = $scope;
 
   vm.scope.clickButton = function(){
-    console.log(ajaxGet.get(6));
-  }
 
+    var num = Math.floor(Math.random() * 10);
+
+    ajaxGet.get(num).then(
+      function(result){
+        console.log(result);
+      }, 
+      function(error) {
+        console.log(error);
+      }
+    );
+  };
 })
 
 .controller('ChatsCtrl', function($scope, Chats) {

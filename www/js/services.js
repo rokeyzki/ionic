@@ -52,10 +52,16 @@ angular.module('starter.services', [])
 .service('ajaxGet', function($q){
   var vm = this;
 
-  var deferred = $q.defer();
-  var promise = deferred.promise;
-
+  // promise 示例
   vm.get = function(val) {
-    return val;
+    var defer = $q.defer();
+
+    if(val > 5) {
+      defer.resolve('参数：' + val);
+    } else {
+      defer.reject('参数值太小');
+    }
+
+    return defer.promise;
   }
 });
