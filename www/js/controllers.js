@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope, ajaxGet) {
+.controller('DashCtrl', function($scope, $log, ajaxGet) {
   var vm = this;
   vm.scope = $scope;
 
@@ -10,10 +10,10 @@ angular.module('starter.controllers', [])
 
     ajaxGet.get(num).then(
       function(result){
-        console.log(result);
+        $log.log(result);
       }, 
       function(error) {
-        console.log(error);
+        $log.log(error);
       }
     );
   };

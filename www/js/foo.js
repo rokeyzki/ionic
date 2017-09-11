@@ -7,7 +7,7 @@ angular.module('starter.foo', [])
   };
 })
 
-.directive('fooDirectiveSecond', function() {
+.directive('fooDirectiveSecond', function($log) {
   return {
     scope: {},
     restrict: 'E',
@@ -16,7 +16,7 @@ angular.module('starter.foo', [])
       $scope.name = "小明";
     },
     link: function(scope,element,attr,ctrl,linker) {
-      console.log(element)
+      $log.log(element)
     }
  };
 })
