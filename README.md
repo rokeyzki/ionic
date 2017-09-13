@@ -24,3 +24,29 @@ More info on this can be found on the Ionic [Getting Started](https://ionicframe
 ## Issues
 
 Issues have been disabled on this repo. If you do find an issue or have a question, consider posting it on the [Ionic Forum](https://forum.ionicframework.com/). If there is truly an error, follow our guidelines for [submitting an issue](https://ionicframework.com/submit-issue/) to the main Ionic repository.
+
+## 自己的备注
+
+### 打包 android app
+
+* 前面都是跟 react native 安装 java、android-sdk 那一套一样
+* 配置 android-sdk 环境变量
+* 安装 gradle
+```bash
+brew install gradle // 安装路径：/usr/local/Cellar/gradle/4.1
+```
+* 平台支持
+```bash
+ionic cordova platform add android
+cordova telemetry on
+```
+* 执行命令
+```bash
+ionic cordova build android
+```
+* 插件缺失
+```bash
+android // 通过打开android sdk manager后把相应缺少的包（例如 Android SDK Platform 25）安装完成
+```
+
+
