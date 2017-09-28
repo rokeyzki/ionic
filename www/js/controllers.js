@@ -3,6 +3,7 @@ angular.module('starter.controllers', [])
 .controller('DashCtrl', function($scope, $log, ajaxGet) {
   var vm = this;
   vm.scope = $scope;
+  vm.scope.host = 'baidu';
 
   vm.scope.clickButton = function(){
 

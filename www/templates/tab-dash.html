@@ -17,5 +17,10 @@
     <input id="click-button" type="button" value="click" ng-click="clickButton()">
     <foo-directive-first></foo-directive-first>
     <foo-directive-second></foo-directive-second>
+    <foo-directive-third foo-src="{{'https://www.' + host + '.com/img/bd_logo1.png'}}"></foo-directive-third>
+    <foo-directive-third></foo-directive-third>
+    <foo-directive-third foo-src="{{'https://www.' + host + '.com/img/bd_logo1.png'}}" width="200"></foo-directive-third>
+    <foo-directive-third foo-src="{{'https://www.' + host + '.com/img/bd_logo1.png'}}" width="100" class="test"></foo-directive-third>
+    <foo-directive-third foo-src="{{'https://www.' + host + '.com/2121img/bd_logo1.png'}}"></foo-directive-third>
   </ion-content>
 </ion-view>
