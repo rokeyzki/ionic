@@ -28,3 +28,10 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 #foo-second {
     color: $calm;
 }
+
+.ar {
+    direction: rtl;
+    unicode-bidi: isolate;
+    -webkit-locale: "ar";
+    font-size: 16px;
+}
